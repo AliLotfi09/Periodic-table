@@ -1,0 +1,47 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 30% 94%; /* #F4F1EA */
+    --foreground: 0 0% 18%; /* #2E2E2E */
+    --primary: 0 0% 18%;
+    --primary-foreground: 43 30% 94%;
+    --muted: 43 10% 85%;
+    --muted-foreground: 0 0% 40%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 18%;
+    --radius: 0px;
+  }
+}
+
+* {
+  font-family: AbarLowFaNum;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.font {
+  font-family: AbarLowFaNum !important;
+	font-style: normal;
+	font-weight: 600;
+}
+
+body {
+  background-color: #f4f1ea;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  color: #2e2e2e;
+}
+.sketch-border {
+  border: 2px solid #2e2e2e;
+}
+.sketch-card {
+  @apply sketch-border bg-white shadow-sketch transition-all duration-200;
+}
+.sketch-card:hover {
+  @apply shadow-sketch-hover translate-x-[2px] translate-y-[2px];
+}
+
